@@ -52,6 +52,20 @@ int main() {
 			sum += arr[i];
 		}
 		cout << " = " << sum;
+	}break;
+	case 4: {
+		const uint32_t size = 6;
+		int arr[size];
+		double sum = 0;
+		for (size_t it = 0; it < size; it++)
+		{
+			cout << "Enter numbers ";
+			cin >> arr[it];
+		}
+		for (size_t i = size - 1; i != -1; i--)
+		{
+			cout << arr[i];
+		}cout << endl;
 	}
 	default:
 		break;
