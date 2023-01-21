@@ -37,6 +37,21 @@ int main() {
 		for (i = 1;i <= a;i++) { cout << n; }cout << endl;
 		for (j = 1;j <= (b - 2);j++) { cout << n;for (y = 1;y <= (a - 2);y++) { cout << " "; }cout << n << endl; }
 		for (e = 1;e <= a;e++) { cout << n; }cout << endl;
+	}break;
+	case 3: {
+		const uint32_t size = 6;
+		int arr[size];
+		double sum = 0;
+		for (size_t it = 0; it < size; it++)
+		{
+			cout << "Salary = ";
+			cin >> arr[it];
+		}
+		for (size_t i = 0; i < size; i++)
+		{
+			sum += arr[i];
+		}
+		cout << " = " << sum;
 	}
 	default:
 		break;
