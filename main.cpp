@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -83,6 +84,32 @@ int main() {
 			sum += arr[i];
 		}
 		cout << "Sum of all sides = " << sum;
+	}break;
+	case 6: {
+		const uint32_t size = 12;
+		int arr[size];
+		int max = 0;
+		int min = 990;
+		int i = 0;
+		double maxx, minn;
+		for (size_t it = 0; it < size; it++)
+		{
+			i++;
+			cout << i << " month = ";
+			cin >> arr[it];
+		}
+		for (size_t i = 0; i < size; i++)
+		{
+			if (arr[i] > max)
+			{
+				max = arr[i];
+			}
+			if (arr[i] < min)
+			{
+				min = arr[i];
+			}
+		}
+		cout << "Max = " << max << " and min = " << min << endl;
 	}break;
 	default:
 		break;
