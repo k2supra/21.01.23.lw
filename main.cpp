@@ -66,7 +66,24 @@ int main() {
 		{
 			cout << arr[i];
 		}cout << endl;
-	}
+	}break;
+	case 5: {
+		const uint32_t size = 5;
+		int arr[size];
+		double sum = 0;
+		int i = 0;
+		for (size_t it = 0; it < size; it++)
+		{
+			i++;
+			cout << i << " side = ";
+			cin >> arr[it];
+		}
+		for (size_t i = 0; i < size; i++)
+		{
+			sum += arr[i];
+		}
+		cout << "Sum of all sides = " << sum;
+	}break;
 	default:
 		break;
 	}
